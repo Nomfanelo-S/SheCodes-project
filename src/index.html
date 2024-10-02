@@ -3,7 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="C:\Users\nomfa\OneDrive\SheCodes-project\src\styles.css"
+    />
+    <script src="C:\Users\nomfa\OneDrive\SheCodes-project\src\index.js"></script>
+
+    <title>Weather App</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container" id="container">
+      <header>
+        <form>
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Enter a city.."
+            id="search-input"
+            required
+          />
+          <input
+            class="search-button"
+            type="submit"
+            value="Search"
+            id="search-button"
+          />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Paris</h1>
+            <p class="current-details">
+              <span id="current-date">Saturday 15:32</span>, moderate rain
+              <br />
+              Humidity: <strong class="humidity">87%</strong>, Wind:
+              <strong class="speed">7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon" id="current-temperature-icon"
+              >☀️</span
+            >
+            <span
+              class="current-temperature-value"
+              id="current-temperature-value"
+              >14</span
+            >
+            <span class="current-temperature-unit" id="current-temperature-unit"
+              >°C</span
+            >
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Nomfanelo Skhosana</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
