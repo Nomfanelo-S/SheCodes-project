@@ -1,12 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  let searchForm = document.querySelector("#search-form");
-  if (searchForm) {
-    searchForm.addEventListener("submit", search);
-  } else {
-    console.error("search-form not found");
-  }
-});
-
 function search(event) {
   event.preventDefault();
   let searchInputElement = document.querySelector("#search-input");
