@@ -9,6 +9,7 @@ function search(event) {
 
   axios.get(apiUrl).then(changeTemperature);
 }
+
 function changeTemperature(response) {
   let temperatureElement = document.querySelector(`#current-temperature-value`);
   let roundedTemperature = Math.round(response.data.temperature.current);
